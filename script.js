@@ -1,18 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     const display = document.getElementById('num-text'); 
     const buttons = document.querySelectorAll('[data-value]');
     let slots = 0; 
     let firstOperand = null;
     let operation = null;
-    // Moved formatNumber function out of the button click
+    
     function formatNumber(num, maxLength) {
         let str = num.toString();
             
         if (str.length > maxLength) {
             str = str.substring(0, maxLength);
         }
-            
-        // If the last character is a dot, remove it
+
         if (str.endsWith('.')) {
             str = str.substring(0, str.length - 1);
         }
@@ -20,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     function setActiveOperator(button) {
-        // Remove active-operator class from all operator buttons
+        
         const operatorButtons = document.querySelectorAll('#btn-plus button, #btn-minus button, #btnX button, #btn-divide button');
         operatorButtons.forEach(btn => btn.classList.remove('active-operator'));
         
-        // If a specific button is provided, add the class to it
+        
         if (button) {
             button.classList.add('active-operator');
         }
@@ -95,9 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 
             }
             
-            
-
-            // If the display is "0", reset the slots count
             if (display.innerText == "0") {
                 display.innerText = value;
                 slots = 1;
@@ -105,10 +101,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 display.innerText += value;
                 slots += 1;
             }
-
-
-
-           
         });
     });
 });
