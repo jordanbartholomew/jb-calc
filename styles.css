@@ -1,0 +1,200 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff );
+}
+
+.header{
+    position: fixed;
+
+}
+
+.header img{
+    position: fixed;
+    top: 1.5vh;
+    width: 7vw;
+    left: 47vw ;
+}
+.header h1{
+    position: fixed;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight:lighter;
+    font-size: 2.8vw;
+    top: 6vw;
+    left: 45vw;
+    color: #fff;
+    
+}
+
+.calc-body{
+    size: 15rem;
+    position: fixed;
+    top: 25%;
+    left: 37vw;
+}
+
+.calc-body img{
+    width: 30vw;
+    height:35vw;
+
+}
+
+#label{
+    width: 22.8vw;
+    height: 10vw ;
+    border-radius: 1vw;
+    position: fixed;
+    top:15vw;
+    left: 39vw;
+    
+    background-color: #1a233d;
+    opacity: 0.5; ;
+    color: white;
+    text-align:right;
+    padding-inline: 1.2vw;
+    font-size: 10vw;
+
+    
+}
+#num-text {
+    position: fixed;
+    top: 17.5vw;
+    left: 40vw;
+    font-family: 'Righteous', cursive;
+    color:#dac3ea;
+    text-align: right;
+    font-size: 4vw;
+    font-weight: lighter;  
+     
+}
+#num-text p{
+    position: fixed;
+}
+
+.num-btn button{
+    width:5vw ;
+    height: 7vh;
+    border-radius: 1vw;
+    border: none;
+    position: fixed;
+    background-color: #1a233d;
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.num-btn button.active-operator {
+    background-color: #b25dea !important;
+}
+
+.num-btn button:hover{
+    background-color: #738cc6;
+}
+
+
+#btn1{
+    position: fixed;
+    top: 27vw; 
+    left: 40vw;    
+}
+
+#btn2{
+    position: fixed;
+    top: 27vw; 
+    left: 46vw;    
+}
+
+#btn3{
+    position: fixed;
+    top: 27vw; 
+    left: 52vw;    
+}
+
+#btn-minus{
+    position: fixed;
+    top: 27vw; 
+    left: 58vw;    
+}
+
+#btn4{
+    position: fixed;
+    top: 32vw; 
+    left: 40vw;    
+}
+
+#btn5{
+    position: fixed;
+    top: 32vw; 
+    left: 46vw;    
+}
+
+#btn6{
+    position: fixed;
+    top: 32vw; 
+    left: 52vw;    
+}
+
+#btn-plus{
+    position: fixed;
+    top: 32vw; 
+    left: 58vw;    
+}
+
+#btn7{
+    position: fixed;
+    top: 37vw; 
+    left: 40vw;    
+}
+
+#btn8{
+    position: fixed;
+    top: 37vw; 
+    left: 46vw;    
+}
+
+#btn9{
+    position: fixed;
+    top: 37vw; 
+    left: 52vw;    
+}
+
+#btn-divide{
+    position: fixed;
+    top: 37vw; 
+    left: 58vw;    
+}
+
+#btn0{
+    position: fixed;
+    top: 42vw; 
+    left: 40vw;    
+}
+
+#btnC{
+    position: fixed;
+    top: 42vw; 
+    left: 46vw;    
+}
+#btn-equals{
+    position: fixed;
+    top: 42vw; 
+    left: 52vw;    
+}
+
+#btnX{
+    position: fixed;
+    top: 42vw; 
+    left: 58vw;    
+}
+
